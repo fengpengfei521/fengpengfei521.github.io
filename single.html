@@ -51,33 +51,7 @@
 						<ul class="nav navbar-nav">
 							<li><a href="index.html">个人主页</a></li>
 							<li class="active"><a href="single.html">我的作品</a></li>
-							<!-- <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">类别 <i class="fa fa-chevron-down"></i></a>
-								<div class="dropdown-menu" style="margin-left: -203.625px;">
-									<div class="dropdown-inner">
-										<ul class="list-unstyled">
-											<li><a href="archive.html">Text 301</a></li>
-											<li><a href="archive.html">Text 302</a></li>
-											<li><a href="archive.html">Text 303</a></li>
-											<li><a href="archive.html">Text 304</a></li>
-											<li><a href="archive.html">Text 305</a></li>
-										</ul>
-										<ul class="list-unstyled">
-											<li><a href="archive.html">Text 306</a></li>
-											<li><a href="archive.html">Text 307</a></li>
-											<li><a href="archive.html">Text 308</a></li>
-											<li><a href="archive.html">Text 309</a></li>
-											<li><a href="archive.html">Text 310</a></li>
-										</ul>
-										<ul class="list-unstyled">
-											<li><a href="archive.html">Text 311</a></li>
-											<li><a href="archive.html">Text 312</a></li>
-											<li><a href="archive.html#">Text 313</a></li>
-											<li><a href="archive.html#">Text 314</a></li>
-											<li><a href="archive.html">Text 315</a></li>
-										</ul>
-									</div>
-								</div>
-							</li> -->
+							
 							<li><a href="archive.html">博客</a></li>
 							<li><a href="contact.html">联系</a></li>
 						</ul>
@@ -105,7 +79,7 @@
 				<article class="single-post">
 					<div class="wrap-post"><!--Start Box-->
 						<div class="entry-header text-center">
-							<h1 class="entry-title">拖拽</h1>
+							<a href="" name="xiang1"><h1 class="entry-title">拖拽</h1></a>
 							<span class="entry-meta">
 								<ul class="list-inline link">
 									<!-- <li>By <a href="#">BUSINESS</a></li> -->
@@ -141,6 +115,36 @@
 								ff：有，但是没效果 <br/>
 								chrome：没有这个方法 <br/>
 								与之对应的释放全局捕获的方法是：元素.releaseCapture();<br/>
+							</p>
+						</div>
+					</div>
+				</article>
+				<article class="single-post">
+					<div class="wrap-post"><!--Start Box-->
+						<div class="entry-header text-center">
+							<a name="xiang2"><h1 class="entry-title">懒加载</h1></a>
+							<span class="entry-meta">
+								<ul class="list-inline link">
+									<!-- <li>By <a href="#">BUSINESS</a></li> -->
+									<li><a href="#">2019年12月11日</a></li>
+									<li><a href="#">9999 评论</a></li>
+								</ul>
+							</span>
+						</div>
+						<div class="post-thumbnail-wrap">
+							<div class="portfolio-box zoom-effect">
+								<img src="images/lanjiazai.png" class="img-responsive" alt="">
+							</div>
+						</div>
+						<div class="entry-content">
+							<a class="btn btn-skin" href="xiangmu/懒加载.html">效果展示</a>
+							<p>
+								懒加载的原理： <br/>
+									先将img标签中的src链接设为同一张图片（空白图片），将其真正的图片地址存储再img标签的自定义属性中（比如data-src）。当js监听到该图片元素进入可视窗口时，即将自定义属性中的地址存储到src属性中，达到懒加载的效果。<br/>
+								懒加载的实现：<br/>
+										 1、页面中的img元素，如果没有src属性，浏览器就不会发出请求去下载图片（也就没有请求咯，也就提高性能咯），一旦通过javascript设置了图片路径，浏览器才会送请求。有点按需分配的意思，你不想看，就不给你看，你想看了就给你看~<br/>
+										 2、如何获取正真的路径，这个简单，现在正真的路径存在元素的“data-url”（这个名字起个自己认识好记的就行）属性里，要用的时候就取出来，再设置；<br/>
+										 3、开始比较之前，先了解一些基本的知识，比如说如何获取某个元素的尺寸大小、滚动条滚动距离及偏移位置距离；  <br/>
 							</p>
 						</div>
 					</div>

@@ -23,14 +23,6 @@
 	
 	<!-- Owl Carousel Assets -->
     <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
-    <!-- <link href="owl-carousel/owl.theme.css" rel="stylesheet"> -->
-
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="js/html5shiv.js"></script>
-        <script src="js/respond.min.js"></script>
-    <![endif]-->
 </head>
 <body id="page-top" class="index-page">
 <div class="wrap-body">
@@ -53,33 +45,6 @@
 						<ul class="nav navbar-nav">
 							<li class="active"><a href="index.html">个人主页</a></li>
 							<li><a href="single.html">我的作品</a></li>
-							<!-- <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">类别 <i class="fa fa-chevron-down"></i></a>
-								<div class="dropdown-menu" style="margin-left: -203.625px;">
-									<div class="dropdown-inner">
-										<ul class="list-unstyled">
-											<li><a href="archive.html">Text 301</a></li>
-											<li><a href="archive.html">Text 302</a></li>
-											<li><a href="archive.html">Text 303</a></li>
-											<li><a href="archive.html">Text 304</a></li>
-											<li><a href="archive.html">Text 305</a></li>
-										</ul>
-										<ul class="list-unstyled">
-											<li><a href="archive.html">Text 306</a></li>
-											<li><a href="archive.html">Text 307</a></li>
-											<li><a href="archive.html">Text 308</a></li>
-											<li><a href="archive.html">Text 309</a></li>
-											<li><a href="archive.html">Text 310</a></li>
-										</ul>
-										<ul class="list-unstyled">
-											<li><a href="archive.html">Text 311</a></li>
-											<li><a href="archive.html">Text 312</a></li>
-											<li><a href="archive.html#">Text 313</a></li>
-											<li><a href="archive.html#">Text 314</a></li>
-											<li><a href="archive.html">Text 315</a></li>
-										</ul>
-									</div>
-								</div>
-							</li> -->
 							<li><a href="archive.html">博客</a></li>
 							<li><a href="contact.html">联系</a></li>
 						</ul>
@@ -120,26 +85,36 @@
 				</div>
 				<div class="content no-gutter wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s">
 					<div class="portfolio-box col-lg-3 col-md-4 col-xs-6">
-						<div class="portfolio-box-inner">
-							<img src="images/1.jpg" class="img-responsive" alt="">
-							<div class="portfolio-box-caption">
-								<div class="portfolio-box-description">
-									<h3 class="product-name">项目名</h3>
-									<p class="product-category">项目介绍</p>
+						<a href="archive.html#test">
+							<div class="portfolio-box-inner">
+								<img src="images/1.jpg" class="img-responsive" alt="">
+								<div class="portfolio-box-caption">
+									<div class="portfolio-box-description">
+										<h3 class="product-name">拖拽</h3>
+										<p class="product-category">
+											拖拽的原理： <br/>
+										（1）鼠标和div的相对距离不变 <br/>
+										（2）三大事件：onmousedown（选择元素） -> onmousemove（移动元素） -> onmouseup（释放元素） <br/>
+										（3）把拖拽加到document<br/>
+										</p>
+									</div>
 								</div>
 							</div>
-						</div>
+						</a>
 					</div>
 					<div class="portfolio-box col-lg-3 col-md-4 col-xs-6">
-						<div class="portfolio-box-inner">
-							<img src="images/2.jpg" class="img-responsive" alt="">
-							<div class="portfolio-box-caption">
-								<div class="portfolio-box-description">
-									<h3 class="product-name">项目名</h3>
-									<p class="product-category">项目介绍</p>
+						<a href="archive.html#test1">
+							<div class="portfolio-box-inner">
+								<img src="images/2.jpg" class="img-responsive" alt="">
+								<div class="portfolio-box-caption">
+									<div class="portfolio-box-description">
+										<h3 class="product-name">懒加载</h3>
+										<p class="product-category">懒加载的原理：<br/>
+										先将img标签中的src链接设为同一张图片（空白图片），将其真正的图片地址存储再img标签的自定义属性中（比如data-src）。当js监听到该图片元素进入可视窗口时，即将自定义属性中的地址存储到src属性中，达到懒加载的效果。</p>
+									</div>
 								</div>
 							</div>
-						</div>
+						</a>
 					</div>
 					<div class="portfolio-box col-lg-3 col-md-4 col-xs-6">
 						<div class="portfolio-box-inner">
@@ -158,7 +133,9 @@
 							<div class="portfolio-box-caption">
 								<div class="portfolio-box-description">
 									<h3 class="product-name">项目名</h3>
-									<p class="product-category">项目介绍</p>
+									<p class="product-category">
+									项目介绍
+									</p>
 								</div>
 							</div>
 						</div>
@@ -265,59 +242,6 @@
 				</div>
 			</div>
 		</section>
-		<!-- <div class="tlinks">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div> -->
-		
-		<!-- ////////////Content Box 03 -->
-		<!-- <section class="box-content box-3">
-			<div class="container">
-				<div class="heading wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
-					<h2>我们的服务</h2>
-					<hr class="line">
-					<div class="intro">我们对简单而精致的用户体验充满热情，而我们和我们的客户对此感到非常自豪</div>
-				</div>
-				<div class="content wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s">
-					<div class="row">
-						<div class="col-lg-2 col-md-3 col-sm-6">
-							<div class="box-item">
-								<img src="images/photo-camera.png" class="img-responsive icon"/>
-								<h3>摄影</h3>
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-3 col-sm-6">
-							<div class="box-item">
-								<img src="images/social.png" class="img-responsive icon"/>
-								<h3>社交</h3>
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-3 col-sm-6">
-							<div class="box-item">
-								<img src="images/seo.png" class="img-responsive icon"/>
-								<h3>搜索引型优化</h3>
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-3 col-sm-6">
-							<div class="box-item">
-								<img src="images/design.png" class="img-responsive icon"/>
-								<h3>设计</h3>
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-3 col-sm-6">
-							<div class="box-item">
-								<img src="images/ux.png" class="img-responsive icon"/>
-								<h3>用户体验</h3>
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-3 col-sm-6">
-							<div class="box-item">
-								<img src="images/credit-card.png" class="img-responsive icon"/>
-								<h3>电子商务</h3>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section> -->
-		
 		<!-- ////////////Content Box 04 -->
 		<!-- <section class="box-content box-4 box-style-2">
 			<div class="container">
@@ -445,38 +369,6 @@
 			</div>
 		</section>
 		
-		<!-- ////////////Content Box 07 -->
-		<!-- <section class="box-content box-7 box-style-2">
-			<div class="container">
-				<div class="heading wow fadeInDown" data-wow-delay=".1s" data-wow-duration="1s">
-					<h2>Our Branding</h2>
-					<hr class="line">
-					<div class="intro">Lastest Project We Working On</div>
-				</div>
-				<div class="content wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
-					<div id="owl-branding" class="owl-carousel">
-						<div class="item">
-							<img src="images/partner-1.png" class="img-responsive"/>
-						</div>
-						<div class="item">
-							<img src="images/partner-2.png" class="img-responsive"/>
-						</div>
-						<div class="item">
-							<img src="images/partner-3.png" class="img-responsive"/>
-						</div>
-						<div class="item">
-							<img src="images/partner-4.png" class="img-responsive"/>
-						</div>
-						<div class="item">
-							<img src="images/partner-5.png" class="img-responsive"/>
-						</div>
-						<div class="item">
-							<img src="images/partner-6.png" class="img-responsive"/>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section> -->
 		
 	</section>
 
@@ -557,16 +449,7 @@
 				</div>
 			</div>
 			<div class="bottom-footer">
-				<!-- <ul class="list-inline footer-link link">
-					<li><a href="#">Facebook</a></li>
-					<li><a href="#">Instagram</a></li>
-					<li><a href="#">Twitter</a></li>
-					<li><a href="#">Google +</a></li>
-					<li><a href="#">Pinterest</a></li>
-				</ul>
-				<div class="copyright">
-					<span>Copyright © 20xx - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></span>
-				</div> -->
+	
 			</div> 
 		</div>
 	</footer>
