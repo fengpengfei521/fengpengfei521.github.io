@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Free Responsive Html5 Templates">
+    <meta name="author" content="">
+	
+    <title>zLoveDesign | Free Bootstrap Template</title>
+	
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	
+	<!-- Custom CSS -->
+	<link href="css/style.css" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link href="css/animate.css" rel="stylesheet" media="all" type="text/css">
+	
+	<!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
+
+	
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-top" class="sub-page">
+<div class="wrap-body">
+
+	<!--////////////////////////////////////Header-->
+	<header>
+		<!---Main Header--->
+		<div class="main-header">
+		
+			<!--Navigation-->
+			<nav id="menu" class="navbar">
+				<div class="container-fluid">
+					<div class="navbar-header">
+					  <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
+						<a class="navbar-brand" href="#">
+							<img src="images/logo.png" width="250px"/>
+						</a>
+					</div>
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav">
+							<li><a href="index.html">个人主页</a></li>
+							<li class="active"><a href="single.html">我的作品</a></li>
+							<!-- <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">类别 <i class="fa fa-chevron-down"></i></a>
+								<div class="dropdown-menu" style="margin-left: -203.625px;">
+									<div class="dropdown-inner">
+										<ul class="list-unstyled">
+											<li><a href="archive.html">Text 301</a></li>
+											<li><a href="archive.html">Text 302</a></li>
+											<li><a href="archive.html">Text 303</a></li>
+											<li><a href="archive.html">Text 304</a></li>
+											<li><a href="archive.html">Text 305</a></li>
+										</ul>
+										<ul class="list-unstyled">
+											<li><a href="archive.html">Text 306</a></li>
+											<li><a href="archive.html">Text 307</a></li>
+											<li><a href="archive.html">Text 308</a></li>
+											<li><a href="archive.html">Text 309</a></li>
+											<li><a href="archive.html">Text 310</a></li>
+										</ul>
+										<ul class="list-unstyled">
+											<li><a href="archive.html">Text 311</a></li>
+											<li><a href="archive.html">Text 312</a></li>
+											<li><a href="archive.html#">Text 313</a></li>
+											<li><a href="archive.html#">Text 314</a></li>
+											<li><a href="archive.html">Text 315</a></li>
+										</ul>
+									</div>
+								</div>
+							</li> -->
+							<li><a href="archive.html">博客</a></li>
+							<li><a href="contact.html">联系</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			
+			<!-- Static Header -->
+			<div class="header-text">
+				<div class="header-text-inner">
+					<p class="wow fadeIn" data-wow-duration="2s" data-wow-delay=".7s">关于作品的详情</p>
+					<h1 class="wow fadeInLeft" data-wow-duration="1.5s">关于作品</h1>
+				</div>
+			</div><!-- /header-text -->
+		</div>
+	</header>
+	<!-- /Section: intro -->
+	
+	<!-- /////////////////////////////////////////Content -->
+	<div id="page-content">
+		
+		<div class="box-content">
+			<div class="container">
+				<!-----------------Content-------------------->
+				<article class="single-post">
+					<div class="wrap-post"><!--Start Box-->
+						<div class="entry-header text-center">
+							<h1 class="entry-title">拖拽</h1>
+							<span class="entry-meta">
+								<ul class="list-inline link">
+									<!-- <li>By <a href="#">BUSINESS</a></li> -->
+									<li><a href="#">2019年12月11日</a></li>
+									<li><a href="#">9999 评论</a></li>
+								</ul>
+							</span>
+						</div>
+						<div class="post-thumbnail-wrap">
+							<div class="portfolio-box zoom-effect">
+								<img src="images/tuozhuai.png" class="img-responsive" alt="">
+							</div>
+						</div>
+						<div class="entry-content">
+							<a class="btn btn-skin" href="xiangmu/拖拽.html">效果展示</a>
+							<p>
+								拖拽的原理： <br/>
+									（1）鼠标和div的相对距离不变 <br/>
+									（2）三大事件：onmousedown（选择元素） -> onmousemove（移动元素） -> onmouseup（释放元素） <br/>
+									（3）把拖拽加到document<br/>
+								拖拽的问题以及解决办法： <br/>
+									（1）拖拽的时候，如果有文字被选中，会产生问题。 <br/>
+									 	原因：<br/>当鼠标按下的时候，如果页面中有文字被选中，会触发浏览器的默认拖拽文字的效果。 <br/>
+									解决方法： <br/>
+								标准下：在onmousedown事件的函数里面添加return false; <br/>
+								非标准IE下：通过在ie下设置全局捕获，用setCapture()方法曲线救国<br/>	 （2）拖拽图片会有问题，原因和解决方法同<br/>
+
+								全局捕获： <br/>
+								方法：元素.setCapture(); <br/>
+								当我们给一个元素设置全局捕获以后，这个元素就会监听后续发生的所有事件，当有事件发生的时候，就会被当前设置了全局捕获的元素所触发 <br/>
+								兼容性问题： <br/>
+								IE：有，并且有效果 <br/>
+								ff：有，但是没效果 <br/>
+								chrome：没有这个方法 <br/>
+								与之对应的释放全局捕获的方法是：元素.releaseCapture();<br/>
+							</p>
+						</div>
+					</div>
+				</article>
+			</div>	
+			
+		</div>
+		
+	</div>
+		
+	<!--////////////////////////////////////Footer-->
+	<footer id="footer">
+		<div class="container">
+			<div class="wrap-footer">
+				<div class="row">
+					<div class="col-md-7">
+						<div class="footer-contact-form">
+							<h2 class="footer-title">意见反馈</h2>
+							<form name="" method="post" action="contact.php">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<input type="text" class="form-control input-lg" name="name" id="name" placeholder="您的名字" required="required" />
+										</div>
+										<div class="form-group">
+											<input type="email" class="form-control input-lg" name="email" id="email" placeholder="您的邮箱" required="required" />
+										</div>
+										<div class="form-group">
+											<input type="text" class="form-control input-lg" name="subject" id="subject" placeholder="您的意见" required="required" />
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<textarea name="message" id="message" class="form-control" rows="4" cols="25" required placeholder="留言" style="height: 190px;"></textarea>
+										</div>						
+									</div>
+								</div>
+								<button type="submit" class="btn btn-skin" name="submitcontact" id="submitcontact">提交</button>
+							</form>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<div class="footer-contact-info">
+							<div class="contact-info-item">
+								<div class="row">
+									<div class="col-md-1">
+										<div class="contact-info-icon">
+											<i class="fa fa-map-marker"></i>
+										</div>
+									</div>
+									<div class="col-md-10">
+										<h3>我的位置</h3>
+										<p>北京市 房山区 现代管理大学</p>
+									</div>
+								</div>
+							</div>
+							<div class="contact-info-item">
+								<div class="row">
+									<div class="col-md-1">
+										<div class="contact-info-icon">
+											<i class="fa fa-phone"></i>
+										</div>
+									</div>
+									<div class="col-md-10">
+										<h3>联系方式</h3>
+										<p>18238855580</p>
+									</div>
+								</div>
+							</div>
+							<div class="contact-info-item">
+								<div class="row">
+									<div class="col-md-1">
+										<div class="contact-info-icon">
+											<i class="fa fa-envelope"></i>
+										</div>
+									</div>
+									<div class="col-md-10">
+										<h3>我的邮箱</h3>
+										<p> 1178487486@qq.com</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-footer">
+				<!-- <ul class="list-inline footer-link link">
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Instagram</a></li>
+					<li><a href="#">Twitter</a></li>
+					<li><a href="#">Google +</a></li>
+					<li><a href="#">Pinterest</a></li>
+				</ul>
+				<div class="copyright">
+					<span>Copyright © 20xx - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></span>
+				</div> -->
+			</div> 
+		</div>
+	</footer>
+	<!-- Footer -->
+	<div id="page-top"><a href="#page-top" class="btn btn-toTop"><i class="fa fa-angle-double-up"></i></a></div>
+	
+	<!-- JS -->
+	<!-- ========== Scripts ========== -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.localScroll.min.js"></script>
+	<script src="js/jquery.scrollTo.min.js"></script>
+	<script src="js/SmoothScroll.js"></script>
+	<script src="js/wow.min.js"></script>
+	
+	<!-- Definity JS -->
+	<script src="js/main.js"></script>
+
+</div>	
+</body>
+</html>

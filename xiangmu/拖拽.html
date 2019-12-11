@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery_1.12.4.min.js"></script>
+	<style>
+		*{padding: 0;margin: 0;}
+		#box{width: 100px;height: 100px;background: red; position: absolute;}
+	</style>
+</head>
+<body>
+	<div id="box" v-lee="">
+
+	</div>
+</body>
+<script src="vue.js"></script>
+<script src="vue-resource.js"></script>
+<script>
+	Vue.directive('lee', {
+		inserted(dom, data) {
+		var disX=0;
+		var disY=0;
+		var min=0;
+		var maxW=$(document).width()-$('#box').outerWidth(true);
+		var maxH=$(document).height()-$('#box').outerHeight(true);
+		$('#box').mousedown(function(ev){
+			disX=ev.pageX-$(this).offset().left;
+			disY=ev.pageY-$(this).offset().top;
+			$(document).mousemove(function(ev){
+				var X=ev.pageX-disX;
+				var Y=ev.pageY-disY;
+				X= X<min?min:X;
+				X= X>maxW?maxW:X;
+				Y= Y<min?min:Y;
+				Y= Y>maxH?maxH:Y;
+				$('#box').css('left',X);
+				$('#box').css('top',Y);
+			})
+			$(document).mouseup(function(ev){
+				$(this).off();
+			})
+		return false;
+	})
+			},
+		})
+		new Vue({
+			el: "#box",
+		})
+</script>
+</html>
