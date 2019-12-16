@@ -149,6 +149,40 @@
 						</div>
 					</div>
 				</article>
+				<article class="single-post">
+					<div class="wrap-post"><!--Start Box-->
+						<div class="entry-header text-center">
+							<a name="xiang3"><h1 class="entry-title">轮播图</h1></a>
+							<span class="entry-meta">
+								<ul class="list-inline link">
+									<!-- <li>By <a href="#">BUSINESS</a></li> -->
+									<li><a href="#">2019年12月12日</a></li>
+									<li><a href="#">9999 评论</a></li>
+								</ul>
+							</span>
+						</div>
+						<div class="post-thumbnail-wrap">
+							<div class="portfolio-box zoom-effect">
+								<img src="images/lunbotu.jpg" class="img-responsive" alt="">
+							</div>
+						</div>
+						<div class="entry-content">
+							<a class="btn btn-skin" href="xiangmu/轮播图.html">效果展示</a>
+							<p>
+								轮播图的原理： <br/>
+									在轮播图数组dataList中，定义一个变量currentIndex = 0表示第一张图片，默认渲染第一张图片即dataList[currentIndex]，然后获取每张图片的下标。点击切换图片时把当前图片的下标赋值给currentIndex即可实现图片切换显示。<br/>
+								轮播图的思路：<br/>
+										 1.将vue的框架封装在function中，在界面刷新时调用，将要轮播的图片存放在data中，还有下面的列表也分别保存在data中的一个数组中，然后每隔一段时间进行自动切换的函数写在methods中，注意函数要调用的话，就要在生命周期函数中调用，不然的话就没有用，点击这里了解生命周期函数详细知识。<br>
+										2.认识到这里需要的是setinterval（）、而不是setimeout()函数：<br>
+										3.n的设置：方便我们进行操作，比如循环到第几个，下面的小黑点也相应的变色，并且控制循环播放，当n等于数组的个数时，自动置0，从头开始。<br>
+										4.html页面写好大的框架后，用v-for来控制，需要注意的是用v-for的时候一定要加上:key<br>
+										5.v-show的使用<br>
+										6.这里使用了字体库，所以要提前下载字体库。
+
+							</p>
+						</div>
+					</div>
+				</article>
 			</div>	
 			
 		</div>
