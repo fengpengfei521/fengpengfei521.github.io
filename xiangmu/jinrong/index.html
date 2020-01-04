@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	*{margin: 0; padding:0;}
+	.clearfix::after {
+		 content: '';
+		 display: block;
+		 width: 0;
+		 height: 0;
+		 visibility: hidden;
+		 clear: both;
+		}
+	.clearfix {
+		 zoom: 1;
+	}
+	.list a{
+		margin: 0 30px;
+		text-decoration:none;
+		color: #444;
+		font-size: 16px;
+	}
+	.list a:hover{
+		color: #50bce7;
+	}
+	.list a:focus{
+		color: #50bce7;
+	}
+</style>
+<body>
+	<div id="box">
+		<!-- 头部 -->
+		<div style="height: 124px;padding: 0 40px;">
+			<div style="height: 124px;width: 1200px;margin: 0 auto;">
+				<div style="width: 552px;float: left; height: 104px;padding: 10px 10px 10px 0;">
+					<img style="width: 500px;height: 100px;" src="https://ccdn.goodq.top/caches/e780f3fda7829cd5087c47170a14de00/aHR0cDovL3d3dy5jaGluYWZpdGEuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8xMi8yNWI5MmI2OGVjZDBmM2JlYTZlZTVhNWNjODcyMGVjNy5qcGc_p_p100_p_3D.jpg" alt="">
+				</div>
+				<div class="list" style="float: left;height: 30px;width: 628px;padding: 47px 0;line-height: 30px;">
+					<a href="#/">首页</a>
+					<a href="#/no2">关于联盟</a>
+					<a href="#/no3">近期活动</a>
+					<a href="#/no4">融信新闻</a>
+					<a href="#/no5">加入联盟</a>
+				</div>
+			</div>
+		</div>
+		<!-- 内容 -->
+		<div style="min-height: 500px;">
+			<router-view></router-view>
+		</div>
+		<!-- 底部 -->
+		<div style="height: 75px;background: #50bce7;text-align: center;padding-top: 20px;">
+			<span style="line-height: 25px;font-size: 14px;color: #fff;">版权所有 2013-2018 中关村融信金融信息化产业联盟</span><br>
+			<span style="line-height: 25px;font-size: 14px;color: #fff;font-weight: bold;">京ICP备19039840号</span>
+		</div>
+	</div>
+	<template id="no1">
+		<div>
+			<div style="height: 556px;margin-bottom: 23px;">
+				<img style="width: 100%; height: 556px;" src="https://ccdn.goodq.top/caches/e780f3fda7829cd5087c47170a14de00/aHR0cDovL3d3dy5jaGluYWZpdGEuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNC9jNmE1MmNhYzAwN2Q1OGFiMmFjZTA3ZDQyNGFkODg3Ny5qcGc_p_p100_p_3D.jpg" alt="">
+			</div>
+			<div style="height: 600px;">
+				<div style="width: 50%;height: 560px;padding: 20px 0; float: left;background: #f6f6f6;">
+					<div style="width: 550px; margin: 0 auto;">
+						<div style="height: 72px;line-height: 72px;font-size: 24px;margin-left: 20px;">联盟介绍</div>
+						<div style="color: #444;font-size: 16px;padding: 0 20px;margin-bottom: 30px;">
+							中国科技金融产业联盟（CTFIA）是为支持战略新兴产业的发展，按照“平等、合作、互助、互惠、自由”的原则，由半导体行业、云计算与数据中心行业、软件和信息服务行业、电子商务和互联网行业、新能源行业、新材料行业等高新技术企业和部分金融机构共同发起，自愿组成的非营利性和开放式的行业合作协作组织，于2013年在香港完成注册。<br>
+							为了更有效服务内地会员单位，经北京市政府批准，于2016年在北京市民政局注册登记成立了中关村融信金融信息化产业联盟（FITA），以下简称产业联盟），作为中国科技金融产业联盟（CTFIA）在内地开展业务的法律实体。<br>
+							我们将认真贯彻执行中国政府关于高新技术产业发展的方针、政策、规划，协助政府提升产业整体的技术研发水平及整体竞争力，加强产融学研合作，积极帮助行业骨干企业制定促进其上下游企业共同发展的产业链融资方案，推动对于关键技术产业的投资并购和产业引进整合，助力各地经济技术发展和产业提升。
+						</div>
+						<div style="width: 162px;height: 42px;background: #50bce7;line-height: 42px;text-align: center;margin-left: 20px;">
+							<a style="font-size: 15px;color: #fff;text-decoration:none;" href="#/no2">检查详情</a>
+						</div>
+					</div>
+					
+				</div>
+				<div style="width: 50%;height: 600px; float: left;">
+					<img style="width: 100%;height: 100%;" src="images/1.jpg" alt="">
+				</div>
+			</div>
+			<div style="height: 600px;">
+				<div style="width: 50%;height: 600px; float: left;">
+					<img style="width: 100%;height: 100%;" src="https://ccdn.goodq.top/caches/e780f3fda7829cd5087c47170a14de00/aHR0cDovL3d3dy5jaGluYWZpdGEuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNC85MzYzOGI3OTMxZTY2ODBiNTNiZDQzYmViZGUxY2NlOS5qcGc_p_p100_p_3D.jpg" alt="">
+				</div>
+				<div style="width: 50%;height: 560px;padding: 20px 0; float: left;background: #f6f6f6;">
+					<div style="width: 550px; margin: 0 auto;padding-top: 130px;">
+						<div style="height: 72px;line-height: 72px;font-size: 24px;margin-left: 20px;">往届论坛</div>
+						<div style="color: #444;font-size: 16px;padding: 0 20px;margin-bottom: 30px;">
+							2019年3月28日-3月29日，“产融智造 新芯向荣”2019全球核心产业创新和半导体产业发展投资大会在成都市双流区召开。本次论坛由中关村融信金融信息化产业联盟(FITA) 、中国科技金融产业联盟（CTFIA）、成都市人民政府主办，成都市投资促进局、成都市双流区人民政府共同承办。超过400位来自国家行业主管部门、地方政府、国内外产业链上下游高新技术企业、知名金融机构和权威科研机构的资深专家与代表出席论坛。
+						</div>
+						<div style="width: 162px;height: 42px;background: #50bce7;line-height: 42px;text-align: center;margin-left: 20px;">
+							<a style="font-size: 15px;color: #fff;text-decoration:none;" href="#/no3">检查详情</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div style="height: 600px;margin-bottom: 20px;">
+				<div style="width: 50%;height: 560px;padding: 20px 0; float: left;background: #f6f6f6;">
+					<div style="width: 550px; margin: 0 auto;">
+						<div style="height: 72px;line-height: 72px;font-size: 24px;margin-left: 20px;">联盟服务</div>
+						<div style="color: #444;font-size: 16px;padding: 0 20px;margin-bottom: 30px;">
+							<li style="height: 24px;color: #444;">投融资指导</li>
+							<li style="height: 24px;color: #444;">产业、技术研究和咨询服务</li>
+							<li style="height: 24px;color: #444;">信息平台与大数据库建设</li>
+							<li style="height: 24px;color: #444;">会议展览及品牌推广</li>
+							<li style="height: 24px;color: #444;">产学研合作促进及成果转化</li>
+							<li style="height: 24px;color: #444;">企业人才培养</li>
+							<li style="height: 24px;color: #444;">国际交流与合作</li>
+							<li style="height: 24px;color: #444;">行业沙龙筹办</li>
+						</div>
+						<div style="width: 162px;height: 42px;background: #50bce7;line-height: 42px;text-align: center;margin-left: 20px;">
+							<a style="font-size: 15px;color: #fff;text-decoration:none;" href="#/no2">检查详情</a>
+						</div>
+					</div>
+					
+				</div>
+				<div style="width: 50%;height: 600px; float: left;">
+					<img style="width: 100%;height: 100%;" src="https://ccdn.goodq.top/caches/e780f3fda7829cd5087c47170a14de00/aHR0cDovL3d3dy5jaGluYWZpdGEuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wMi84MDY4NTg1ODdmMzAwZDI0YzYxOGE4NTk1MGEwYjBiMS5qcGc_p_p100_p_3D.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</template>
+	<template id="no2">
+		<div>
+			<div style="height: 60px;background: #f6f6f6;">
+				<div style="width: 1200px;margin: 0 auto;line-height: 60px;">
+					<a style="color: #1d3658;text-decoration:none; font-size: 14px;" href="#/">首页 </a><span style="color: #50bce7;font-size: 14px;">> 关于联盟</span>
+				</div>
+			</div>
+			<div style="height: 420px;padding-top: 80px;">
+				<div style="width: 1200px;height: 340px;margin: 0 auto;">
+					<div style="width: 300px;float: left;">
+						<div style="width: 267px;height: 38px;background: #50bce7;margin-bottom: 20px; font-size: 14px;color: #fff;line-height:38px;">联盟介绍</div>
+						<div style="width: 200px;height: 42px;border-bottom: 1px solid #ccc;line-height: 42px;font-size: 14px;color: #888;">联盟服务</div>
+						<div style="width: 200px;height: 42px;line-height: 42px;font-size: 14px;color: #888;">联盟成员</div>
+					</div>
+					<div style="width: 860px;float: left;padding-right: 40px;">
+						<div style="height: 70px;text-align: center;font-size: 22px;color: #50bce7;">关于联盟</div>
+						<div style="line-height: 24px; font-size: 14px;color: #888;">
+							     中国科技金融产业联盟（CTFIA）是为支持战略新兴产业的发展，按照“平等、合作、互助、互惠、自由”的原则，由半导体行业、云计算与数据中心行业、软件和信息服务行业、电子商务和互联网行业、新能源行业、新材料行业等高新技术企业和部分金融机构共同发起，自愿组成的非营利性和开放式的行业合作协作组织，于2013年在香港完成注册。<br>
+								<div style="height: 24px;"></div>
+							      为了更有效服务内地会员单位，经北京市政府批准，于2016年在北京市民政局注册登记成立了中关村融信金融信息化产业联盟（FITA），以下简称产业联盟），作为中国科技金融产业联盟（CTFIA）在内地开展业务的法律实体。<br>
+								<div style="height: 24px;"></div>
+							      我们将认真贯彻执行中国政府关于高新技术产业发展的方针、政策、规划，协助政府提升产业整体的技术研发水平及整体竞争力，加强产融学研合作，积极帮助行业骨干企业制定促进其上下游企业共同发展的产业链融资方案，推动对于关键技术产业的投资并购和产业引进整合，助力各地经济技术发展和产业提升。
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</template>
+	<template id="no3">
+		<div>
+			<div style="height: 60px;background: #f6f6f6;">
+				<div style="width: 1200px;margin: 0 auto;line-height: 60px;">
+					<a style="color: #1d3658;text-decoration:none; font-size: 14px;" href="#/">首页 </a><span style="color: #50bce7;font-size: 14px;">> 往届回顾</span>
+				</div>
+			</div>
+			<div style="width: 900px;margin: 0 auto;padding-top: 80px;">
+				<div style="height: 70px;text-align: center;font-size: 22px;color: #50bce7;">历届展示</div>
+				<div class="clearfix">
+					<div style="width: 292px;height: 182px;float: left;margin-right: 10px;margin-bottom: 10px;">
+						<img style="width: 100%;height: 100%;" src="https://ccdn.goodq.top/caches/e780f3fda7829cd5087c47170a14de00/aHR0cDovL3d3dy5jaGluYWZpdGEuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNC9hZmMzM2QxMmQxOGQyODM0ZGFiYTY4NzRjOTUxMDM4ZS04MDB4NTAwLmpwZw_p_p100_p_3D_p_p100_p_3D.jpg" alt="">
+					</div>
+					<div style="width: 292px;height: 182px;float: left;margin-right: 10px;margin-bottom: 10px;">
+						<img style="width: 100%;height: 100%;" src="https://ccdn.goodq.top/caches/e780f3fda7829cd5087c47170a14de00/aHR0cDovL3d3dy5jaGluYWZpdGEuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNC85MzYzOGI3OTMxZTY2ODBiNTNiZDQzYmViZGUxY2NlOS04MDB4NTAwLmpwZw_p_p100_p_3D_p_p100_p_3D.jpg" alt="">
+					</div>
+					<div style="width: 292px;height: 182px;float: left;margin-bottom: 10px;">
+						<img style="width: 100%;height: 100%;" src="https://ccdn.goodq.top/caches/e780f3fda7829cd5087c47170a14de00/aHR0cDovL3d3dy5jaGluYWZpdGEuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNC9kMzVhOTc3MzI3N2I5MDQxZTFmNzA5NjM1ZTZlODNmMi04MDB4NTAwLmpwZw_p_p100_p_3D_p_p100_p_3D.jpg" alt="">
+					</div>
+					<div style="width: 292px;height: 182px;float: left;margin-right: 10px;margin-bottom: 10px;">
+						<img style="width: 100%;height: 100%;" src="https://ccdn.goodq.top/caches/e780f3fda7829cd5087c47170a14de00/aHR0cDovL3d3dy5jaGluYWZpdGEuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wMi9mODJkYmE5NmM4Njg1NzE3NDBhMzkxODQ0ODFjNGY2NC04MDB4NTAwLmpwZw_p_p100_p_3D_p_p100_p_3D.jpg" alt="">
+					</div>
+					<div style="width: 292px;height: 182px;float: left;margin-right: 10px;margin-bottom: 10px;">
+						<img style="width: 100%;height: 100%;" src="https://ccdn.goodq.top/caches/e780f3fda7829cd5087c47170a14de00/aHR0cDovL3d3dy5jaGluYWZpdGEuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wMi80ZWNlOGU1YjM3OWZhNWUzM2ZiZGMxNjg4OTc1YTkwNC04MDB4NTAwLmpwZw_p_p100_p_3D_p_p100_p_3D.jpg" alt="">
+					</div>
+					<div style="width: 292px;height: 182px;float: left;margin-bottom: 10px;">
+						<img style="width: 100%;height: 100%;" src="https://ccdn.goodq.top/caches/e780f3fda7829cd5087c47170a14de00/aHR0cDovL3d3dy5jaGluYWZpdGEuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wMi9jMDMzZDI1NTY4MGViMjNjZTlhMmRiMGY5YjZjOTRlMC04MDB4NTAwLmpwZw_p_p100_p_3D_p_p100_p_3D.jpg" alt="">
+					</div>
+					<div style="width: 292px;height: 182px;float: left;margin-right: 10px;margin-bottom: 10px;">
+						<img style="width: 100%;height: 100%;" src="https://ccdn.goodq.top/caches/e780f3fda7829cd5087c47170a14de00/aHR0cDovL3d3dy5jaGluYWZpdGEuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNC83NWMzMjAwYjdkNTY4ZjMzMTQzZDE5ZDcyNjQ4N2QzNS04MDB4NTAwLmpwZw_p_p100_p_3D_p_p100_p_3D.jpg" alt="">
+					</div>
+					<div style="width: 292px;height: 182px;float: left;margin-right: 10px;margin-bottom: 10px;">
+						<img style="width: 100%;height: 100%;" src="https://ccdn.goodq.top/caches/e780f3fda7829cd5087c47170a14de00/aHR0cDovL3d3dy5jaGluYWZpdGEuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNC8zZWYxNDc4Mjc3MzkzMWQxZjcxNDg2ZGVhYWEzNmIxZC04MDB4NTAwLmpwZw_p_p100_p_3D_p_p100_p_3D.jpg" alt="">
+					</div>
+					<div style="width: 292px;height: 182px;float: left;margin-bottom: 10px;">
+						<img style="width: 100%;height: 100%;" src="https://ccdn.goodq.top/caches/e780f3fda7829cd5087c47170a14de00/aHR0cDovL3d3dy5jaGluYWZpdGEuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNC8yZGU1NDMyNmNmNGU0OThhYjlkNjFiNmU2MzhkMzM4Mi04MDB4NTAwLmpwZw_p_p100_p_3D_p_p100_p_3D.jpg" alt="">
+					</div>
+				</div>
+				<div style="height: 24px;color: #888;font-size: 16px;">2018年3月28日-3月29日，<span style="font-weight: bold;">“产融智造 新芯向荣”</span>2019全球核心产业创新和半导体产业发展投资大会在成都市双流区召开</div>
+				<div style="height: 24px;"></div>
+				<div style="line-height: 24px;color: #888;font-size: 16px;">
+					论坛由中关村融信金融信息化产业联盟(FITA) 、中国科技金融产业联盟（CTFIA）、成都市人民政府主办，成都市投资促进局、成都市双流区人民政府共同承办。超过400位来自国家行业主管部门、地方政府、国内外产业链上下游高新技术企业、知名金融机构和权威科研机构的资深专家与代表出席论坛。
+
+				</div>
+				<div style="height: 24px;"></div>
+				<div style="height: 24px;"></div>
+				<div style="height: 24px;color: #888;font-size: 16px;">2017年9月22日，<span style="font-weight: bold;">“芯聚苏州”</span>2017年核心技术产业与全球化高峰论坛在苏州市相城区召开</div>
+				<div style="height: 24px;"></div>
+				<div style="line-height: 24px;color: #888;font-size: 16px;">
+					论坛由中关村融信金融信息化产业联盟(FITA) 、中国科技金融产业联盟（CTFIA）主办，苏州市发展和改革委员会、苏州市经济和信息化委员会、苏州市科学技术局、苏州市相城区人民政府共同承办。超过500位来自国家行业主管部门、地方政府、国内外产业链上下游高新技术企业、知名金融机构和权威科研机构的资深专家与代表出席论坛。
+
+
+				</div>
+				<div style="height: 24px;"></div>
+				<div style="height: 24px;border-bottom: 1px dashed #50bce7;margin-bottom: 100px;"></div>
+			</div>
+		</div>
+	</template>
+	<template id="no4">
+		<div>
+			
+		</div>
+	</template>
+	<template id="no5">
+		<div>
+			<div style="height: 60px;background: #f6f6f6;">
+				<div style="width: 1200px;margin: 0 auto;line-height: 60px;">
+					<a style="color: #1d3658;text-decoration:none; font-size: 14px;" href="#/">首页 </a><span style="color: #50bce7;font-size: 14px;">> 加入联盟</span>
+				</div>
+			</div>
+				<div style="height: 420px;padding-top: 130px;">
+					<div style="width: 940px;height: 284px; margin: 0 auto;">
+						<div style="width: 440px;height: 284px;float: left;">
+							<div style="height: 32px;color: #50bce7;font-size: 22px;">联系我们</div>
+							<div style="padding: 20px 0;">
+								<div style="height: 25px;color: #696969;font-size: 13px;">商务邮箱：renzeyu@broadcredit.org</div>
+								<div style="height: 25px;color: #696969;font-size: 13px;">联系人：任先生</div>
+								<div style="height: 25px;color: #696969;font-size: 13px;">联系电话：+86（10）8721 7758</div>
+								<div style="height: 25px;"></div>
+								<div style="height: 25px;color: #696969;font-size: 13px;font-weight: bold;">您可通过填写以下表单申请加入联盟，也可通过上方联系方式联系我们
+								</div>
+							</div>
+						</div>
+						<div style="width: 498px;height: 282px;float: left;border:1px solid #ccc;">
+							<div style="width: 258px;height: 258px;margin-left: 150px;">
+								<img src="https://ccdn.goodq.top/caches/e780f3fda7829cd5087c47170a14de00/aHR0cDovL3d3dy5jaGluYWZpdGEuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wMi8yZjk1NDg1MTAzZTZjNWUwODlkOTkyZmNiY2I5MTRkZS5qcGc_p_p100_p_3D.jpg" alt="">
+							</div>
+							<div style="height: 24px;font-size: 16px;font-family: 宋体;font-weight: bold;margin-left: 130px;">欢迎关注中关村融信金融信息化产业联盟公众号</div>
+						</div>
+					</div>
+				</div>
+			<div style="height: 682px;padding-top: 20px;">
+				<div style="width: 1200px;height: 682px;margin: 0 auto;">
+					<div style="height: 76px;font-size: 14px;color: #292929;">
+						单位全称：<br>
+						<input style="background: #fcfcfc;width: 1198px;height: 38px;border:1px solid #ccc;" type="text">
+					</div>
+					<div style="height: 76px;font-size: 14px;color: #292929;">
+						单位地址：<br>
+						<input style="background: #fcfcfc;width: 1198px;height: 38px;border:1px solid #ccc;" type="text">
+					</div>
+					<div style="height: 76px;font-size: 14px;color: #292929;">
+						单位网址：<br>
+						<input style="background: #fcfcfc;width: 1198px;height: 38px;border:1px solid #ccc;" type="text">
+					</div>
+					<div style="height: 76px;font-size: 14px;color: #292929;">
+						法定代表人及联系方式：<br>
+						<input style="background: #fcfcfc;width: 1198px;height: 38px;border:1px solid #ccc;" type="text">
+					</div>
+					<div style="height: 76px;font-size: 14px;color: #292929;">
+						日常联系人及联系方式：<br>
+						<input style="background: #fcfcfc;width: 1198px;height: 38px;border:1px solid #ccc;" type="text">
+					</div>
+					<div style="height: 76px;font-size: 14px;color: #292929;">
+						主营业务：<br>
+						<input style="background: #fcfcfc;width: 1198px;height: 38px;border:1px solid #ccc;" type="text">
+					</div>
+					<div style="height: 76px;margin-bottom: 20px; font-size: 14px;color: #292929;">
+						单位规模：<br>
+						<input style="background: #fcfcfc;width: 1198px;height: 60px;border:1px solid #ccc;" type="text">
+					</div>
+					<div style="width: 70px;height: 28px;background: #eee;line-height: 28px;text-align: center;font-size: 14px;border:1px solid #ccc;">提交</div>
+				</div>
+			</div>
+		</div>
+	</template>
+</body>
+<script src="vue.js"></script>
+<script src="vue-router.js"></script>
+<script src="com.js"></script>
+<script src="aaa.js"></script>
+</html>
